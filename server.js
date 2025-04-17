@@ -14,9 +14,10 @@ app.use("/uploads", express.static("uploads")); // Serve static files
 const uri = "mongodb+srv://allmailwaste:Sidhik786@cluster0.uyx5zii.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 mongoose
-  .connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect(uri)
   .then(() => console.log("✅ MongoDB connected"))
   .catch((err) => console.error("❌ MongoDB connection error:", err));
+
 
 // ✅ Register Routes
 app.use("/api/tenants", tenantRoutes);
