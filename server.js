@@ -11,7 +11,7 @@ app.use(express.json());
 app.use("/uploads", express.static("uploads")); // Serve static files
 
 // MongoDB Connection
-mongoose.connect("mongodb://127.0.0.1:27017/pg-tenant-db")
+mongodb+srv://allmailwaste:<Sidhik@@786>@cluster0.uyx5zii.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
   .then(() => console.log("✅ MongoDB connected"))
   .catch((err) => console.error("❌ MongoDB connection error:", err));
 
