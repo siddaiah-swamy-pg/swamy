@@ -12,7 +12,6 @@ app.use("/uploads", express.static("uploads")); // Serve static files
 
 // MongoDB Connection
 const uri = "mongodb+srv://allmailwaste:Sidhik786@cluster0.uyx5zii.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
-
   .then(() => console.log("✅ MongoDB connected"))
   .catch((err) => console.error("❌ MongoDB connection error:", err));
 
